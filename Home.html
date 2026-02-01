@@ -1,0 +1,243 @@
+<home.html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TechLearnHub – Best Tech Deals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #f8fafc, #eef2ff);
+      color: #0f172a;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 90vh;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+    }
+
+    .hero p {
+      margin: 15px 0 25px;
+      color: #c7d2fe;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #2563eb, #4f46e5);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(79,70,229,0.5);
+    }
+
+    /* SECTION */
+    .section {
+      padding: 70px 30px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      position: relative;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .badge {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      background: #22c55e;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #475569;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 12px 22px;
+      background: linear-gradient(135deg, #2563eb, #4f46e5);
+      color: white;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* CATEGORIES */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .cat {
+      background: #1e293b;
+      color: white;
+      padding: 22px;
+      border-radius: 16px;
+      font-weight: bold;
+      font-size: 1.05rem;
+    }
+
+    /* TRUST */
+    .trust {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+      font-weight: 600;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0f172a;
+      color: #9ca3af;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Best Tech Deals in India</h1>
+  <p>Smart gadgets • Honest pricing • Trusted links</p>
+  <a href="#deals" class="btn">Explore Deals</a>
+</section>
+
+<!-- DEALS -->
+<section class="section" id="deals">
+  <h2>🔥 Today’s Top Deals</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <span class="badge">HOT</span>
+      <h3><i class="fa-solid fa-battery-full"></i> 20000mAh Power Bank</h3>
+      <p>Fast charging • Travel friendly</p>
+      <a href="#">Check Best Deal</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">BEST</span>
+      <h3><i class="fa-solid fa-bolt"></i> 65W GAN Charger</h3>
+      <p>Laptop + phone charging</p>
+      <a href="#">Check Best Deal</a>
+    </div>
+
+    <div class="card">
+      <span class="badge">NEW</span>
+      <h3><i class="fa-solid fa-heart-pulse"></i> Fitness Band</h3>
+      <p>SpO2 • Heart rate • Sleep tracking</p>
+      <a href="#">Check Best Deal</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section">
+  <h2>🛒 Popular Categories</h2>
+
+  <div class="categories">
+    <div class="cat">⚡ Charging Accessories</div>
+    <div class="cat">🎧 Audio Gadgets</div>
+    <div class="cat">⌚ Smart Wearables</div>
+    <div class="cat">💻 Laptop Accessories</div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="section">
+  <h2>Why TechLearnHub?</h2>
+
+  <div class="trust">
+    <div>✅ Daily Updated Deals</div>
+    <div>✅ Trusted Amazon Links</div>
+    <div>✅ No Fake Discounts</div>
+    <div>✅ Clean & Fast Website</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 TechLearnHub • Amazon Affiliate Website
+</footer>
+
+</body>
+</html>
+
+
