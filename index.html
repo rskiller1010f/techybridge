@@ -295,6 +295,216 @@
     <div>✅ In-depth Product Reviews</div>
     <div>✅ Expert Tech Advice</div>
   </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechLearnHub – Best Tech Deals</title>
+
+<style>
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* ================= BODY ================= */
+body{
+  background:#f4f8ff;
+  color:#0f172a;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+  position:fixed;
+  top:-90px;
+  left:0;
+  width:100%;
+  background:#0d47a1;
+  padding:18px 30px;
+  transition:0.4s;
+  z-index:1000;
+}
+
+.navbar.show{
+  top:0;
+}
+
+.navbar ul{
+  list-style:none;
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.navbar a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.navbar a:hover{
+  text-decoration:underline;
+}
+
+/* ================= HERO ================= */
+.hero{
+  background:linear-gradient(135deg,#0d47a1,#1976d2);
+  padding:140px 20px 120px;
+  color:#fff;
+  text-align:center;
+  border-bottom-left-radius:60px;
+  border-bottom-right-radius:60px;
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:18px;
+  opacity:0.9;
+}
+
+/* ================= SECTION ================= */
+.section{
+  max-width:1100px;
+  margin:50px auto;
+  padding:0 20px;
+}
+
+.section-title{
+  font-size:28px;
+  margin-bottom:25px;
+  border-left:6px solid #1976d2;
+  padding-left:12px;
+}
+
+/* ================= DEAL BOX ================= */
+.deal-box{
+  background:#e3f2fd;
+  border-radius:18px;
+  padding:25px;
+  margin-bottom:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.deal-box h3{
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.deal-box p{
+  margin-bottom:15px;
+  color:#334155;
+}
+
+.badge{
+  display:inline-block;
+  background:#1976d2;
+  color:#fff;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:14px;
+  margin-bottom:10px;
+}
+
+/* ================= BUTTON ================= */
+.btn{
+  display:inline-block;
+  padding:12px 20px;
+  background:#0d47a1;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.btn:hover{
+  background:#08306b;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#0d47a1;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  margin-top:60px;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:600px){
+  .hero h1{font-size:32px;}
+  .navbar ul{gap:15px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Best Deals</a></li>
+    <li><a href="#">Mobile Accessories</a></li>
+    <li><a href="#">Laptop Accessories</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Best Tech Deals</h1>
+  <p>Handpicked affordable tech products with excellent value for money</p>
+</section>
+
+<!-- DEALS -->
+<section class="section">
+  <h2 class="section-title">Audio Deals</h2>
+
+  <div class="deal-box">
+    <span class="badge">🎧 Audio</span>
+    <h3>Budget TWS Earbuds with ANC</h3>
+    <p>Active noise cancellation earbuds with transparency mode and 30+ hours total playtime.</p>
+    <a href="#" class="btn">Check Price on Amazon</a>
+  </div>
+
+  <div class="deal-box">
+    <span class="badge">🎵 Audio</span>
+    <h3>Wireless Neckband Earphones</h3>
+    <p>Comfortable neckband design with magnetic earbuds and fast charging.</p>
+    <a href="#" class="btn">Check Price on Amazon</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 TechLearnHub • Deals that actually matter
+</footer>
+
+<!-- ================= JS (AUTO HIDE NAV) ================= -->
+<script>
+const navbar = document.querySelector(".navbar");
+
+document.addEventListener("mousemove", (e) => {
+  if (e.clientY < 40) {
+    navbar.classList.add("show");
+  } else {
+    navbar.classList.remove("show");
+  }
+});
+</script>
+
+</body>
+</html>
+
 
 
 
