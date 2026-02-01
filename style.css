@@ -229,3 +229,165 @@ footer {
     font-size: 2.2rem;
   }
 }
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(135deg, #f4f7fb, #e9eef5);
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  background: #ffffff;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1f2933;
+  margin-right: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #6366f1;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 50px 0 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* ===== SUBTEXT ===== */
+.subtitle {
+  text-align: center;
+  color: #4b5563;
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+}
+
+/* ===== DEALS GRID ===== */
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* ===== DEAL CARD ===== */
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.card p {
+  color: #4b5563;
+  font-size: 15px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(99,102,241,0.4);
+}
+
+/* ===== NOTE ===== */
+.note {
+  background: #ffffff;
+  padding: 18px 22px;
+  border-left: 5px solid #6366f1;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  color: #374151;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111827;
+  color: #9ca3af;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+footer a {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+
