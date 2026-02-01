@@ -530,6 +530,127 @@ footer {
 footer p {
   font-size: 14px;
 }
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(180deg, #0d47a1 0%, #e3f2fd 45%);
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  background: #ffffff;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 28px 28px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+nav a {
+  text-decoration: none;
+  color: #0d47a1;
+  font-weight: 600;
+  margin-right: 18px;
+}
+
+nav a:hover {
+  color: #1565c0;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  padding: 80px 20px 100px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 650px;
+  margin: auto;
+  opacity: 0.95;
+}
+
+/* ===== CURVED DIVIDER ===== */
+.curve {
+  background: #ffffff;
+  height: 120px;
+  border-radius: 100% 100% 0 0;
+  margin-top: -80px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #0d47a1;
+}
+
+/* ===== DEAL CARDS ===== */
+.deals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0d47a1;
+}
+
+.card p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #37474f;
+}
+
+.card a {
+  display: inline-block;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #1976d2, #0d47a1);
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 14px
+
 
 
 
