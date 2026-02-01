@@ -670,6 +670,29 @@ border: 1px solid #90caf9;
     Handpicked affordable tech products with excellent value for money
   </p>
 </section>
+   .rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.star {
+  font-size: 18px;
+  color: #cbd5e1; /* empty star */
+}
+
+.star.filled {
+  color: #facc15; /* yellow star */
+}
+
+.rating-text {
+  font-size: 14px;
+  color: #475569;
+  margin-left: 6px;
+}
+
+
 
 
 
