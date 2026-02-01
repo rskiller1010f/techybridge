@@ -1,4 +1,4 @@
-# TechLearnHub.in
+# TheTechLearnHub.in
 
 Welcome to **TechLearnHub.in**, a modern website showcasing the **best shopping offers and deals**.  
 Currently focused on **UK deals**, with plans to expand to **India** in the near future.
