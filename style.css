@@ -664,6 +664,14 @@ border: 1px solid #90caf9;
   box-shadow: 0 10px 35px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+   <section class="best-tech-box">
+  <h1>Best Tech Deals</h1>
+  <p class="subtitle">
+    Handpicked affordable tech products with excellent value for money
+  </p>
+</section>
+
+
 
 
 
