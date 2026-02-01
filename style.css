@@ -1,0 +1,231 @@
+/* =========================
+   ROOT VARIABLES (THEME)
+========================= */
+:root {
+  --primary: #08009f;
+  --secondary: #00319b;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --bg: #eef2ff;
+  --text: #334155;
+  --card: #ffffff;
+  --radius: 18px;
+  --shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, var(--light), var(--bg));
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+nav h1 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary);
+  font-size: 1.6rem;
+}
+
+nav a {
+  margin-left: 22px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(135deg, var(--dark), #1e293b);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 15px 0 30px;
+  color: #c7d2fe;
+  font-size: 1.1rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(79,70,229,0.45);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  padding: 80px 30px;
+  text-align: center;
+}
+
+section h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--dark);
+}
+
+/* =========================
+   DEAL CARDS GRID
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: var(--card);
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Badge / Sticker */
+.badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: #22c55e;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.card p {
+  margin-bottom: 20px;
+  color: #475569;
+}
+
+/* =========================
+   CATEGORIES
+========================= */
+.cats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cat {
+  background: var(--dark);
+  color: white;
+  padding: 25px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  font-size: 1.05rem;
+  transition: 0.3s;
+}
+
+.cat:hover {
+  background: var(--primary);
+}
+
+/* =========================
+   TRUST SECTION
+========================= */
+.trust {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  font-weight: 600;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: var(--dark);
+  color: #9ca3af;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+}
